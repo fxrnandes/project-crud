@@ -1,0 +1,52 @@
+.button{
+    border-style: none;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: black;
+    color: #f5fcff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: box-shadow .3s;
+    border-radius: 5px;
+}
+
+.button.blue{
+    background-color: #603286;
+}
+.button.blue:hover{
+    box-shadow: inset 200px 0 0 #d21cff;
+}
+
+button.green{
+    background-color: #498867;
+}
+.button.green:hover{
+    box-shadow: inset 200px 0 0 #15d873;
+}
+
+button.red{
+    background-color: #e94f6b;
+}
+.button.red:hover{
+    box-shadow: inset 200px 0 0 #ff002f;
+}
+
+@media(max-width:480px){
+    .button.mobile{
+        color:transparent;
+        font-size:0;
+        width:50px;
+        height:50px;
+        border-radius: 50%;
+        position:fixed;
+        top: 90vh;
+        left: 80vw;
+    }
+    .button.mobile::before{
+        content: "+";
+        color:black;
+        font-size:2rem;
+        width:100%;
+        height:100%;
+    }
+}
