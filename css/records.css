@@ -15,6 +15,7 @@
 .records td{
     height: 50px;
     padding-left: 20px;
+    border-radius: 5px;
 }
 
 .records th:last-child,
